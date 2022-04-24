@@ -40,7 +40,7 @@ if (isset($_GET["catID"])) {
 <!-- <link href="css/home.css" rel="stylesheet"> -->
 <link href="css/style.css" type="text/css" rel="stylesheet" />
 
-<title>Articles</title>
+<title>Мақалалар</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -61,12 +61,12 @@ if (isset($_GET["catID"])) {
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title">
-                            <h2><?= $catID == "" ? "" : $category['category_name'] ?> Articles</h2>
+                            <h2><?= $catID == "" ? "" : $category['category_name'] ?> Мақалалар</h2>
 
                             <ul class="list-inline mt-1 mb-4">
                                 <li class="list-inline-item">
                                     <a href="articleOfCategory.php" class="text-muted">
-                                        All
+                                        Бәрі
                                     </a>
                                 </li>
 

@@ -19,7 +19,7 @@ $data = $stmt->fetchAll();
 <!-- <link href="css/home.css" rel="stylesheet"> -->
 <link type="text/css" rel="stylesheet" href="css/style.css" />
 
-<title>Add Article</title>
+<title>Мақала қосу</title>
 
 </head>
 
@@ -33,7 +33,7 @@ $data = $stmt->fetchAll();
     <main class="main">
 
         <div class="jumbotron text-center mb-0">
-            <h1 class="display-3 font-weight-normal text-muted">All Articles</h1>
+            <h1 class="display-3 font-weight-normal text-muted">Барлық мақалалар</h1>
         </div>
 
         <div class="bg-white p-4">
@@ -41,7 +41,7 @@ $data = $stmt->fetchAll();
             <div class="row ">
 
                 <div class="col-lg-12 text-center mb-3">
-                    <a class="btn btn-info" href="add_article.php">Add Article</a>
+                    <a class="btn btn-info" href="add_article.php">Мақала қосу</a>
                 </div>
 
             </div>
@@ -52,13 +52,13 @@ $data = $stmt->fetchAll();
                     <thead class='thead-dark'>
                         <tr>
                             <th scope='col'>ID</th>
-                            <th scope='col'>Title</th>
-                            <th scope='col'>Content</th>
-                            <th scope='col'>Image</th>
-                            <th scope='col'>Created Time</th>
-                            <th scope='col'>Category</th>
-                            <th scope='col'>Author</th>
-                            <th scope='col' colspan="3">Actions</th>
+                            <th scope='col'>Тақырып</th>
+                            <th scope='col'>Мазмұны</th>
+                            <th scope='col'>Сурет</th>
+                            <th scope='col'>Құрылған уақыт</th>
+                            <th scope='col'>Санат</th>
+                            <th scope='col'>Автор</th>
+                            <th scope='col' colspan="3">Әрекеттер</th>
                         </tr>
                     </thead>
 

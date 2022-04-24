@@ -1,7 +1,7 @@
 <!-- Include Head -->
 <?php include "assest/head.php"; ?>
 
-<title>Add Category</title>
+<title>Санат қосу</title>
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <main role="main" class="main">
 
         <div class="jumbotron text-center">
-            <h1 class="display-3 font-weight-normal text-muted">Submit a Category</h1>
+            <h1 class="display-3 font-weight-normal text-muted">Санат жіберу</h1>
         </div>
 
         <div class="container">
@@ -24,26 +24,26 @@
                     <!-- Form -->
                     <form action="assest/insert.php?type=category" method="POST" enctype="multipart/form-data">
                         <div class="form-group">
-                            <label for="catName">Category Name</label>
+                            <label for="catName">Санат атауы</label>
                             <input type="text" class="form-control" name="catName" id="catName">
                         </div>
 
                         <div class="form-group">
-                            <label for="catImage">Category Image</label>
+                            <label for="catImage">Санат кескіні</label>
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input" name="catImage" id="catImage">
-                                <label class="custom-file-label" for="catImage">Choose file</label>
+                                <label class="custom-file-label" for="catImage">Файлды таңдаңыз</label>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="catColor">Category Color</label>
+                            <label for="catColor">Санат Түсі</label>
                             <input type="color" id="catColor" name="catColor" value="#0f88e1">
                         </div>
 
 
                         <div class="text-center">
-                            <button type="submit" name="submit" class="btn btn-success btn-lg w-25">Submit</button>
+                            <button type="submit" name="submit" class="btn btn-success btn-lg w-25">Сақтау</button>
                         </div>
                     </form>
                 </div>

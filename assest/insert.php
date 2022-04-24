@@ -74,7 +74,7 @@ if ($conn) {
                 $tableName = 'author';
 
                 // Call insert function
-                insertToDB($conn, $tableName, $ata);
+                insertToDB($conn, $tableName, $data);
 
                 // Go to show.php
                 header("Location: ../author.php", true, 301);
@@ -131,7 +131,7 @@ function insertToDB($conn, $table, $data)
         // insert row
         $stmt->execute($data);
 
-        echo "New records created successfully";
+        echo "Жаңа жазбалар сәтті жасалды";
     } catch (PDOException $error) {
         echo $error;
     }
@@ -176,21 +176,21 @@ function uploadImage2($name, $dest)
     // Check if image file is a actual image or fake image
     $check = getimagesize($_FILES[$name]["tmp_name"]);
     if ($check !== false) {
-        echo "File is an image - " . $check["mime"] . ".";
+        echo "Файл - бұл сурет - " . $check["mime"] . ".";
         $uploadOk = 1;
     } else {
-        echo "File is not an image.";
+        echo "Файл кескін емес.";
         $uploadOk = 0;
     }
 
     // Check if file already exists
     if (file_exists($target_file)) {
-        echo "Sorry, file already exists.";
+        echo "Кешіріңіз, файл бұрыннан бар.";
         $uploadOk = 0;
     }
     // Check file size
     if ($_FILES[$name]["size"] > 500000) {
-        echo "Sorry, your file is too large.";
+        echo "Кешіріңіз, файлыңыз тым үлкен.";
         $uploadOk = 0;
     }
     // Allow certain file formats
@@ -198,18 +198,18 @@ function uploadImage2($name, $dest)
         $imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
         && $imageFileType != "gif"
     ) {
-        echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+        echo "Кешіріңіз, тек JPG, JPEG, PNG және GIF файлдарына рұқсат етілген.";
         $uploadOk = 0;
     }
     // Check if $uploadOk is set to 0 by an error
     if ($uploadOk == 0) {
-        echo "Sorry, your file was not uploaded.";
+        echo "Кешіріңіз, файлыңыз жүктеп салынбады.";
         // if everything is ok, try to upload file
     } else {
         if (move_uploaded_file($_FILES[$name]["tmp_name"], $target_file)) {
-            echo "The file " . basename($_FILES[$name]["name"]) . " has been uploaded.";
+            echo "Файл " . basename($_FILES[$name]["name"]) . " жүктеп салынды.";
         } else {
-            echo "Sorry, there was an error uploading your file.";
+            echo "Кешіріңіз, файлыңызды жүктеп салу кезінде қате орын алды.";
         }
     }
 }

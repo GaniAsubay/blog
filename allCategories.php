@@ -14,7 +14,7 @@ $categories = $stmt->fetchAll();
 
 ?>
 
-<title>All Categories</title>
+<title>Барлық санаттар</title>
 <link type="text/css" rel="stylesheet" href="css/style.css" />
 
 </head>
@@ -28,7 +28,7 @@ $categories = $stmt->fetchAll();
     <main role="main" class="main">
 
         <div class="jumbotron text-center mb-0">
-            <h1 class="display-3 font-weight-normal text-muted">All Categories</h1>
+            <h1 class="display-3 font-weight-normal text-muted">Барлық санаттар</h1>
         </div>
 
         <div class="bg-white p-4">
@@ -36,7 +36,7 @@ $categories = $stmt->fetchAll();
             <div class="row">
 
                 <div class="col-lg-12 text-center mb-3">
-                    <a class="btn btn-primary" href="add_category.php">Add Category</a>
+                    <a class="btn btn-primary" href="add_category.php">Санат қосу</a>
                 </div>
 
             </div>
@@ -47,10 +47,10 @@ $categories = $stmt->fetchAll();
                     <thead class='thead-dark'>
                         <tr>
                             <th scope='col'>ID</th>
-                            <th scope='col'>Name</th>
-                            <th scope='col'>Image</th>
-                            <th scope='col'>Color</th>
-                            <th scope='col' colspan="2">Actions</th>
+                            <th scope='col'>Аты</th>
+                            <th scope='col'>Сурет</th>
+                            <th scope='col'>Түс</th>
+                            <th scope='col' colspan="2">Әрекеттер</th>
                         </tr>
                     </thead>
 

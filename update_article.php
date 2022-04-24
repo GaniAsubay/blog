@@ -24,7 +24,7 @@ $authors = $stmt->fetchAll();
 <!-- JS TextEditor -->
 <script src="//cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
 
-<title>Update Article</title>
+<title>Мақаланы жаңарту</title>
 </head>
 
 <body>
@@ -37,7 +37,7 @@ $authors = $stmt->fetchAll();
     <main role="main" class="main">
 
         <div class="jumbotron text-center">
-            <h1 class="display-3 font-weight-normal text-muted">Update Article</h1>
+            <h1 class="display-3 font-weight-normal text-muted">Мақаланы жаңарту</h1>
         </div>
 
         <div class="container">
@@ -48,19 +48,19 @@ $authors = $stmt->fetchAll();
                     <form action="assest/update.php?type=article&id=<?= $article_id ?>&img=<?= $article["article_image"] ?>" method="POST" enctype="multipart/form-data">
 
                         <div class="form-group">
-                            <label for="arTitle">Title</label>
+                            <label for="arTitle">Тақырып</label>
                             <input type="text" class="form-control" name="arTitle" id="arTitle" value="<?= $article["article_title"] ?>">
                         </div>
 
                         <div class="form-group">
-                            <label for="arContent">Content</label>
+                            <label for="arContent">Мазмұны</label>
                             <textarea class="form-control" name="arContent" id="arContent" rows="3">
                             <?= $article["article_content"] ?>
                         </textarea>
                         </div>
 
                         <div class="form-group">
-                            <label for="UploadImage">Image</label>
+                            <label for="UploadImage">Сурет</label>
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input" name="arImage" id="arImage">
                                 <label class="custom-file-label" for="UploadImage"> <?= $article['article_image'] ?></label>
@@ -73,9 +73,9 @@ $authors = $stmt->fetchAll();
                         </div>
 
                         <div class="form-group">
-                            <label for="arCategory">Category</label>
+                            <label for="arCategory">Санат</label>
                             <select class="custom-select" name="arCategory" id="arCategory">
-                                <option disabled>-- Select Category --</option>
+                                <option disabled>-- Санат таңдаңыз --</option>
 
                                 <?php foreach ($categories as $category) : ?>
 
@@ -96,9 +96,9 @@ $authors = $stmt->fetchAll();
 
 
                         <div class="form-group">
-                            <label for="arauthor">Author</label>
+                            <label for="arauthor">Автор</label>
                             <select class="custom-select" name="arAuthor" id="arAuthor">
-                                <option disabled>-- Select Author --</option>
+                                <option disabled>-- Авторды таңдаңыз --</option>
 
                                 <?php foreach ($authors as $author) : ?>
 
@@ -119,7 +119,7 @@ $authors = $stmt->fetchAll();
                             </select>
                         </div>
                         <div class="text-center">
-                            <button type="submit" name="update" class="btn btn-success btn-lg w-25">Update</button>
+                            <button type="submit" name="update" class="btn btn-success btn-lg w-25">Жаңарту</button>
                         </div>
 
 

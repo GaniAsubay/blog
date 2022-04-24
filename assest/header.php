@@ -9,15 +9,15 @@
             <?php if ($loggedin) : ?>
 
                 <nav class="my-2 my-md-0 mr-md-3">
-                    <a class="p-2 px-5 text-muted" href="index.php">Home</a>
-                    <a class="p-2 px-5 text-muted" href="categories.php">Category</a>
-                    <a class="p-2 px-5 text-muted" href="article.php">Article</a>
-                    <a class="p-2 px-5 text-muted" href="author.php">Author</a>
+                    <a class="p-2 px-5 text-muted" href="index.php">Үй</a>
+                    <a class="p-2 px-5 text-muted" href="categories.php">Санат</a>
+                    <a class="p-2 px-5 text-muted" href="article.php">Мақала</a>
+                    <a class="p-2 px-5 text-muted" href="author.php">Автор</a>
                 </nav>
 
             <?php else : ?>
                 <nav class="my-2 my-md-0 mr-md-3">
-                    <a class="p-2 px-5 text-muted" href="articleOfCategory.php">Articles</a>
+                    <a class="p-2 px-5 text-muted" href="articleOfCategory.php">Мақалалар</a>
                 </nav>
 
             <?php endif;  ?>

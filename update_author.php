@@ -11,7 +11,7 @@ $author = $stmt->fetch();
 
 ?>
 
-<title>Update Author</title>
+<title>Авторды жаңарту</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@ $author = $stmt->fetch();
     <main role="main" class="main">
 
         <div class="jumbotron text-center">
-            <h1 class="display-3 font-weight-normal text-muted">Update Author</h1>
+            <h1 class="display-3 font-weight-normal text-muted">Авторды жаңарту</h1>
         </div>
 
         <div class="container">
@@ -34,22 +34,22 @@ $author = $stmt->fetch();
                     <form action="assest/update.php?type=author&id=<?= $author_id ?>&img=<?= $author["author_avatar"] ?>" method="POST" enctype="multipart/form-data">
 
                         <div class="form-group">
-                            <label for="authName">Full Name</label>
+                            <label for="authName">Толық аты</label>
                             <input type="text" class="form-control" name="authName" id="authName" value="<?= $author['author_fullname'] ?>">
                         </div>
 
                         <div class="form-group">
-                            <label for="authDesc">Description</label>
+                            <label for="authDesc">Сипаттама</label>
                             <input type="text" class="form-control" name="authDesc" id="authDesc" value="<?= $author['author_desc'] ?>">
                         </div>
 
                         <div class="form-group">
-                            <label for="authEmail">Email</label>
+                            <label for="authEmail">Электрондық пошта</label>
                             <input type="text" class="form-control" name="authEmail" id="authEmail" value="<?= $author['author_email'] ?>">
                         </div>
 
                         <div class="form-group">
-                            <label for="authImage">Avatar</label>
+                            <label for="authImage">Аватар</label>
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input" name="authImage" id="authImage">
                                 <label class="custom-file-label" for="authImage"> <?= $author['author_avatar'] ?> </label>
@@ -61,21 +61,21 @@ $author = $stmt->fetch();
                         </div>
 
                         <div class="form-group">
-                            <label for="authTwitter">Twitter Username <span class="text-info">(optional)</span></label>
+                            <label for="authTwitter">Twitter пайдаланушы аты <span class="text-info">(міндетті емес)</span></label>
                             <input type="text" class="form-control" name="authTwitter" id="authTwitter" value="<?= $author['author_twitter'] ?>">
                         </div>
                         <div class="form-group">
-                            <label for="authGithub">Github Username <span class="text-info">(optional)</span></label>
+                            <label for="authGithub">Github пайдаланушы аты <span class="text-info">(міндетті емес)</span></label>
                             <input type="text" class="form-control" name="authGithub" id="authGithub" value="<?= $author['author_github'] ?>">
                         </div>
                         <div class="form-group">
-                            <label for="authLinkedin">Linkedin Username <span class="text-info">(optional)</span></label>
+                            <label for="authLinkedin">Linkedin пайдаланушы аты <span class="text-info">(міндетті емес)</span></label>
                             <input type="text" class="form-control" name="authLinkedin" id="authLinkedin" value="<?= $author['author_link'] ?>">
                         </div>
 
 
                         <div class="text-center">
-                            <button type="submit" name="update" class="btn btn-success btn-lg w-25">Submit</button>
+                            <button type="submit" name="update" class="btn btn-success btn-lg w-25">Сақтау</button>
                         </div>
 
 

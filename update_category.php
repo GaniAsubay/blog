@@ -11,7 +11,7 @@ $category = $stmt->fetch();
 
 ?>
 
-<title>Update Category</title>
+<title>Санатты жаңарту</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@ $category = $stmt->fetch();
     <main role="main" class="main">
 
         <div class="jumbotron text-center ">
-            <h1 class="display-3 font-weight-normal text-muted">Update a Category</h1>
+            <h1 class="display-3 font-weight-normal text-muted">Санатты жаңарту</h1>
         </div>
 
         <div class="container">
@@ -35,12 +35,12 @@ $category = $stmt->fetch();
                     <!-- Form -->
                     <form action="assest/update.php?type=category&id=<?= $category_id ?>&img=<?= $category["category_image"] ?>" method="POST" enctype="multipart/form-data">
                         <div class="form-group">
-                            <label for="catName">Category Name</label>
+                            <label for="catName">Санат атауы</label>
                             <input type="text" class="form-control" name="catName" id="catName" value="<?= $category["category_name"] ?>">
                         </div>
 
                         <div class="form-group">
-                            <label for="catImage">Category Image</label>
+                            <label for="catImage">Санат кескіні</label>
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input" name="catImage" id="catImage">
                                 <label class="custom-file-label" for="catImage"><?= $category["category_image"] ?></label>
@@ -52,13 +52,13 @@ $category = $stmt->fetch();
                         </div>
 
                         <div class="form-group">
-                            <label for="catColor">Category Color</label>
+                            <label for="catColor">Санат Түсі</label>
                             <input type="color" id="catColor" name="catColor" value="<?= $category["category_color"] ?>">
                         </div>
 
 
                         <div class="text-center">
-                            <button type="submit" name="update" class="btn btn-success btn-lg w-25">Update</button>
+                            <button type="submit" name="update" class="btn btn-success btn-lg w-25">Жаңарту</button>
                         </div>
                     </form>
                 </div>

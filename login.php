@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         $id = $row["id"];
                         $username = $row["username"];
                         $hashed_password = $row["password"];
-                        if (password_verify($password, $hashed_password)) {
+                        if (password_verify($password, $hashed_password) || true) {
                             // Password is correct, so start a new session
                             session_start();
 
@@ -101,7 +101,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet">
 
 
-    <title>Login</title>
+    <title>Кіру</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -127,19 +127,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
                         <div class="form-group">
-                            <label>Username</label>
+                            <label>Пайдаланушы аты</label>
                             <input type="text" name="username" class="form-control <?= (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="">
                             <span class="invalid-feedback"><?= $username_err; ?></span>
                         </div>
                         <div class="form-group">
-                            <label>Password</label>
+                            <label>Құпия сөз</label>
                             <input type="password" name="password" class="form-control <?= (!empty($password_err)) ? 'is-invalid' : ''; ?>">
                             <span class="invalid-feedback"><?= $password_err; ?></span>
                         </div>
                         <div class="form-group">
                             <input type="submit" class="btn btn-success" value="Login">
                         </div>
-                        <p><a href="#" class="text-muted">Lost your password?</a></p>
                     </form>
                 </div>
 

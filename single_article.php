@@ -28,7 +28,7 @@ $comments = $stmt->fetchAll();
 <link type="text/css" rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/single_article.css">
 
-<title>Single Article</title>
+<title>Бір мақала</title>
 
 </head>
 
@@ -125,7 +125,7 @@ $comments = $stmt->fetchAll();
 
                         </div> -->
                     <div class="card bg-light my-3">
-                        <div class="card-header"><strong> More from <?= $article['author_fullname'] ?></strong></div>
+                        <div class="card-header"><strong> Толығырақ <?= $article['author_fullname'] ?></strong></div>
 
                         <ul class="list-group list-group-flush">
                             <?php foreach ($articles as $article) : ?>
@@ -148,7 +148,7 @@ $comments = $stmt->fetchAll();
                 <div class="col-lg-9 border p-4 mt-3 bg-white">
 
                     <div class="comments">
-                        <h2 class="text-center text-muted py-3">Comments</h2>
+                        <h2 class="text-center text-muted py-3">Пікірлер</h2>
 
                         <?php foreach ($comments as $comment) : ?>
 
@@ -180,8 +180,8 @@ $comments = $stmt->fetchAll();
                             <div class="form-group mt-3">
                                 <input type="hidden" name="username" value="<?= rand() ?>">
                                 <input type="hidden" name="id_article" value="<?= $article_id ?>">
-                                <textarea name="comment" class="form-control" rows="3" placeholder="Add your comment..."></textarea>
-                                <button name="submit" type="submit" class="btn btn-success float-right mt-1">Add Comment</button>
+                                <textarea name="comment" class="form-control" rows="3" placeholder="Пікіріңізді қосыңыз..."></textarea>
+                                <button name="submit" type="submit" class="btn btn-success float-right mt-1">Пікір қосу</button>
                             </div>
                             <div class="clearfix"></div>
                         </form>

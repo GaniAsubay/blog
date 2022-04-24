@@ -38,7 +38,7 @@ $most_read_articles = $stmt->fetchAll();
     }
 </style>
 
-<title>Home</title>
+<title>Үй</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -55,8 +55,8 @@ $most_read_articles = $stmt->fetchAll();
             <div class="bg-div px-5 d-flex align-items-center">
 
                 <div class="text-left w-50">
-                    <h1 class="display-4 text-white">Welcome to Dev Culture!</h1>
-                    <h2 class="display-5 text-white">Discover Dev tutorial and articles that you can read completely for free!</h2>
+                    <h1 class="display-4 text-white">Dev Culture қолданбасына қош келдіңіз!</h1>
+                    <h2 class="display-5 text-white">Толығымен тегін оқуға болатын Dev оқулығы мен мақалаларды ашыңыз!</h2>
 
                 </div>
 
@@ -74,7 +74,7 @@ $most_read_articles = $stmt->fetchAll();
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title">
-                            <h2>Latest Articles</h2>
+                            <h2>Соңғы мақалалар</h2>
                         </div>
                     </div>
 
@@ -122,7 +122,7 @@ $most_read_articles = $stmt->fetchAll();
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="section-title">
-                                    <h2>Most Read</h2>
+                                    <h2>Ең көп оқылған</h2>
                                 </div>
                             </div>
 
@@ -145,7 +145,6 @@ $most_read_articles = $stmt->fetchAll();
                                             </div>
 
                                             <h3 class="post-title"><a href="single_article.php?id=<?= $article['article_id'] ?>"><?= $article['article_title'] ?></a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
                                         </div>
                                     </div>
                                 </div>
@@ -230,7 +229,7 @@ $most_read_articles = $stmt->fetchAll();
                         <!-- catagories -->
                         <div class="aside-widget">
                             <div class="section-title">
-                                <h2>Categories</h2>
+                                <h2>Санаттар</h2>
                             </div>
                             <div class="category-widget">
 

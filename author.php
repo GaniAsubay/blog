@@ -13,7 +13,7 @@ $stmt->execute();
 $authors = $stmt->fetchAll();
 ?>
 
-<title>All Author</title>
+<title>Барлық Автор</title>
 <link type="text/css" rel="stylesheet" href="css/style.css" />
 
 <style>
@@ -34,14 +34,14 @@ $authors = $stmt->fetchAll();
     <!-- Main -->
     <main role="main" class="main">
         <div class="jumbotron text-center mb-0">
-            <h1 class="display-3 font-weight-normal text-muted">All Author</h1>
+            <h1 class="display-3 font-weight-normal text-muted">Барлық Автор</h1>
         </div>
 
         <div class="bg-white py-3 px-5">
             <div class="row">
 
                 <div class="col-lg-12 text-center mb-3">
-                    <a class="btn btn-info" href="add_author.php">Add Author</a>
+                    <a class="btn btn-info" href="add_author.php">Авторды қосу</a>
                 </div>
 
             </div>
@@ -52,14 +52,14 @@ $authors = $stmt->fetchAll();
                     <thead class='thead-dark'>
                         <tr>
                             <th scope='col'>ID</th>
-                            <th scope='col'>Full Name</th>
-                            <th scope='col'>Description</th>
-                            <th scope='col'>Avatar</th>
+                            <th scope='col'>Толық аты</th>
+                            <th scope='col'>Сипаттама</th>
+                            <th scope='col'>Аватар</th>
                             <th scope='col'>Email</th>
                             <th scope='col'>Twitter</th>
                             <th scope='col'>Github</th>
                             <th scope='col'>Linkedin</th>
-                            <th scope='col' colspan="2">Actions</th>
+                            <th scope='col' colspan="2">Әрекеттер</th>
                         </tr>
                     </thead>
 
